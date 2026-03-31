@@ -24,7 +24,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 bg-zinc-950">
+    <div className="min-h-screen flex items-center justify-center px-4 bg-zinc-50 dark:bg-zinc-950 transition-colors duration-300">
       {/* Background gradient */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-emerald-500/5 rounded-full blur-[120px]" />
@@ -39,12 +39,12 @@ export default function LoginPage() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
             </svg>
           </div>
-          <h1 className="text-3xl font-bold text-zinc-100">GymAdmin</h1>
-          <p className="text-zinc-500 mt-1">Sign in to your admin panel</p>
+          <h1 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100">GymAdmin</h1>
+          <p className="text-zinc-600 dark:text-zinc-500 mt-1">Sign in to your admin panel</p>
         </div>
 
         {/* Form Card */}
-        <div className="bg-zinc-900/80 backdrop-blur-sm border border-zinc-800 rounded-2xl p-8 shadow-2xl">
+        <div className="bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm border border-zinc-200 dark:border-zinc-800 rounded-2xl p-8 shadow-2xl">
           {error && (
             <div className="mb-4 p-3 bg-red-500/10 border border-red-500/30 rounded-lg text-red-400 text-sm">
               {error}
@@ -77,10 +77,10 @@ export default function LoginPage() {
         </div>
 
         <div className="text-center mt-8 space-y-3">
-          <p className="text-xs text-zinc-500">
+          <p className="text-xs text-zinc-500 dark:text-zinc-400">
             Gym Management System • Admin Panel
           </p>
-          <p className="text-xs text-zinc-500">
+          <p className="text-xs text-zinc-500 dark:text-zinc-400">
             Need help? Contact support:{' '}
             <a 
               href="mailto:Anything87554@gmail.com" 
@@ -89,8 +89,8 @@ export default function LoginPage() {
               Anything87554@gmail.com
             </a>
           </p>
-          <div className="pt-4 mt-4 border-t border-zinc-900/50">
-            <p className="text-[10px] text-zinc-600 max-w-sm mx-auto leading-relaxed">
+          <div className="pt-4 mt-4 border-t border-zinc-200 dark:border-zinc-900/50">
+            <p className="text-[10px] text-zinc-500 dark:text-zinc-600 max-w-sm mx-auto leading-relaxed">
               By logging in, you agree to our Terms & Conditions. Access is restricted to authorized personnel only. All activities are monitored.
             </p>
           </div>
