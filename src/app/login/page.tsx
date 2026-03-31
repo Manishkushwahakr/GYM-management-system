@@ -76,9 +76,25 @@ export default function LoginPage() {
           </form>
         </div>
 
-        <p className="text-center text-xs text-zinc-600 mt-6">
-          Gym Management System • Admin Panel
-        </p>
+        <div className="text-center mt-8 space-y-3">
+          <p className="text-xs text-zinc-500">
+            Gym Management System • Admin Panel
+          </p>
+          <p className="text-xs text-zinc-500">
+            Need help? Contact support:{' '}
+            <a 
+              href="mailto:Anything87554@gmail.com" 
+              className="text-emerald-500 hover:text-emerald-400 transition-colors"
+            >
+              Anything87554@gmail.com
+            </a>
+          </p>
+          <div className="pt-4 mt-4 border-t border-zinc-900/50">
+            <p className="text-[10px] text-zinc-600 max-w-sm mx-auto leading-relaxed">
+              By logging in, you agree to our Terms & Conditions. Access is restricted to authorized personnel only. All activities are monitored.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
